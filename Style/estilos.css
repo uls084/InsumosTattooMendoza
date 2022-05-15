@@ -43,7 +43,8 @@ h5 {
 }
 
 h2 {
-    margin: 24px
+    margin: 24px;
+    font-size: 32px;
 }
 
 section.novedadesIndex {
@@ -85,6 +86,7 @@ p {
     color: #cccccc;
     font-family: 'Nunito', sans-serif;
     border-radius: 3px;
+    text-align: center;
 }
 
 body header .navBar {
@@ -245,6 +247,7 @@ form input {
         "cards cards cards";
     grid-area: main_container;
     padding: 20px 6.5%;
+    margin-bottom:15%;
 }
 
 /* Pagina Nosotros*/
