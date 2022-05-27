@@ -1,0 +1,45 @@
+$colorRojo: #be313a;
+$colorGris: #1d1c1c;
+$colorNegro: black;
+
+nav {
+    height: 70px;
+    padding: 0 5%;
+    background-color: $colorGris;
+    top: 0;
+    width: 100%;
+}
+
+
+.navBar-nav {
+    .actual {
+        background-color: $colorRojo;
+        color: $colorNegro;
+    }
+}
+
+.nav-link {
+    color: $colorRojo  !important;
+}
+
+
+.navBar-brand {
+    a {
+        color: $colorRojo  !important;
+    }
+}
+
+.btn-primary {
+    background-color: $colorRojo  !important;
+    color: $colorNegro !important;
+    border-color: $colorGris  !important;
+    opacity: 0.8 !important;
+}
+
+body {
+    background-color: #747474;
+}
+
+.card-body {
+    background-color: rgb(211, 209, 209) !important;
+}
