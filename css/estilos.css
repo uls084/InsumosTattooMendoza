@@ -3,24 +3,37 @@
   padding: 0%;
   box-sizing: border-box; }
 
-#portada {
+.container--grande {
+  display: flex;
   width: 100%;
-  height: auto; }
+  height: auto;
+  justify-content: center !important;
+  align-items: center !important; }
+
+.container--mediano {
+  display: flex;
+  width: 55%;
+  height: auto;
+  justify-content: center !important;
+  align-items: center !important; }
 
 .col {
   display: flex;
   text-align: center;
   padding: 10px 10px; }
 
-.cards-img-top {
-  width: 55%;
-  height: auto; }
-
 .textContainer {
   padding-top: 90px; }
 
 main {
-  padding-bottom: 90px; }
+  padding-bottom: 90px;
+  font-family: 'Nunito', sans-serif !important; }
+
+header, h1 {
+  font-family: 'Oswald', sans-serif !important; }
+
+h1 {
+  font-weight: bold; }
 
 .row {
   display: flex;
@@ -56,8 +69,8 @@ nav {
   width: 100%; }
 
 .navBar-nav .actual {
-  background-color: #be313a;
-  color: black; }
+  background-color: #be313a !important;
+  color: black !important; }
 
 .nav-link {
   color: #be313a !important; }

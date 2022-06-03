@@ -2,6 +2,11 @@ $colorRojo: #be313a;
 $colorGris: #1d1c1c;
 $colorNegro: black;
 
+@mixin navDefault {
+    background-color: $colorRojo !important;
+    color: $colorNegro !important;
+}
+
 nav {
     height: 70px;
     padding: 0 5%;
@@ -11,10 +16,10 @@ nav {
 }
 
 
+
 .navBar-nav {
     .actual {
-        background-color: $colorRojo;
-        color: $colorNegro;
+       @include navDefault; 
     }
 }
 
@@ -30,8 +35,7 @@ nav {
 }
 
 .btn-primary {
-    background-color: $colorRojo  !important;
-    color: $colorNegro !important;
+    @include navDefault;
     border-color: $colorGris  !important;
     opacity: 0.8 !important;
 }

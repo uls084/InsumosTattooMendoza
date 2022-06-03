@@ -4,9 +4,24 @@
     box-sizing: border-box;
 }
 
-#portada {
-    width: 100%;
-    height: auto;
+$imgAncho: (
+    grande: 100%,
+    mediano: 55%,
+);
+
+$padProp: (
+    pad: 90px,
+);
+
+@each $medida,
+$tamanio in $imgAncho {
+    .container--#{$medida} {
+        display: flex;
+        width: $tamanio;
+        height: auto;
+        justify-content: center !important;
+        align-items: center !important;
+    }
 }
 
 .col {
@@ -15,17 +30,23 @@
     padding: 10px 10px;
 }
 
-.cards-img-top {
-    width: 55%;
-    height: auto;
-}
 
 .textContainer {
-    padding-top: 90px;
+    padding-top: map-get($padProp,pad );
 }
 
 main {
-    padding-bottom: 90px;
+    padding-bottom: map-get($padProp,pad );
+    font-family: 'Nunito', sans-serif !important;
+}
+
+header {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+h1 {
+    @extend header;
+    font-weight: bold;
 }
 
 .row {
@@ -46,12 +67,14 @@ footer {
 .footerRight {
     display: flex;
     flex-direction: row;
+
     a {
         flex: 1 1;
         display: block;
         width: 20px;
         height: 20px;
         margin: 0 10px;
+
         img {
             width: 100%;
         }
@@ -61,3 +84,4 @@ footer {
 .navbar-brand {
     font-size: 24px;
 }
+
