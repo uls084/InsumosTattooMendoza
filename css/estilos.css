@@ -25,15 +25,75 @@
 .textContainer {
   padding-top: 90px; }
 
+.card-img {
+  width: 100%;
+  height: 158px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 main {
+  padding-top: 70px;
   padding-bottom: 90px;
+  min-height: 70vh;
   font-family: 'Nunito', sans-serif !important; }
 
 header, h1 {
   font-family: 'Oswald', sans-serif !important; }
 
+p {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 18px !important; }
+
+.formulario {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center;
+  min-height: 89vh;
+  flex-direction: column; }
+  .formulario form {
+    width: 392px; }
+  .formulario p {
+    min-width: 500px; }
+
+.formularioField {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center;
+  margin: 10px 0; }
+  .formularioField input[type=text],
+  .formularioField input[type=email],
+  .formularioField textarea {
+    padding: 5px 15px;
+    border: none;
+    width: 100%; }
+  .formularioField input[type=submit] {
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    border-color: #131313;
+    font-size: 15px;
+    line-height: 50px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #131313;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0 23px; }
+
 h1 {
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 .row {
   display: flex;
@@ -44,7 +104,9 @@ footer {
   height: 54px;
   width: 100%;
   gap: 100px;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  position: fixed;
+  bottom: 0; }
 
 .footerRight {
   display: flex;
@@ -90,6 +152,9 @@ body {
 .card-body {
   background-color: #d3d1d1 !important; }
 
+footer {
+  background-color: #5c5c5c; }
+
 /* Animacion logo */
 .text-focus-in {
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
@@ -130,4 +195,8 @@ body {
   footer div {
     font-size: 11px; }
   li.nav-item {
-    text-align: center; } }
+    text-align: center; }
+  .formulario form {
+    width: 340px; }
+  .formulario p {
+    min-width: 340px; } }

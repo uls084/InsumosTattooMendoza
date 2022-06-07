@@ -13,6 +13,13 @@ $padProp: (
     pad: 90px,
 );
 
+@mixin displayCont {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+}
+
 @each $medida,
 $tamanio in $imgAncho {
     .container--#{$medida} {
@@ -32,11 +39,22 @@ $tamanio in $imgAncho {
 
 
 .textContainer {
-    padding-top: map-get($padProp,pad );
+    padding-top: map-get($padProp, pad);
+}
+
+.card-img {
+    width: 100%;
+    height: 158px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main {
-    padding-bottom: map-get($padProp,pad );
+    padding-top: 70px;
+    padding-bottom: map-get($padProp, pad);
+    min-height: 70vh;
     font-family: 'Nunito', sans-serif !important;
 }
 
@@ -44,9 +62,65 @@ header {
     font-family: 'Oswald', sans-serif !important;
 }
 
+p {
+    @include displayCont;
+    padding: 10px 10px;
+    font-size: 18px !important;
+}
+
+.formulario {
+    @include displayCont;
+    min-height: 89vh;
+    flex-direction: column;
+    form {
+        width: 392px;
+    }
+    p {
+        min-width: 500px;
+    }
+}
+
+.formularioField {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    margin: 10px 0;
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        padding: 5px 15px;
+        border: none;
+        width: 100%;
+    }
+
+    input[type=submit] {
+        color: #ffffff;
+        font-family: 'Nunito', sans-serif;
+        border-color: #131313;
+        font-size: 15px;
+        line-height: 50px;
+        height: 50px;
+        font-style: normal;
+        font-weight: 400;
+        background-color: #131313;
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 0 23px;
+    }
+}
+
+
+
+
 h1 {
     @extend header;
     font-weight: bold;
+    text-align: center;
 }
 
 .row {
@@ -61,6 +135,8 @@ footer {
     width: 100%;
     gap: 100px;
     padding-bottom: 0px;
+    position: fixed;
+    bottom: 0;
 }
 
 
@@ -84,4 +160,3 @@ footer {
 .navbar-brand {
     font-size: 24px;
 }
-
