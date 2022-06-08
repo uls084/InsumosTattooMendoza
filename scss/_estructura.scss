@@ -10,7 +10,7 @@ $imgAncho: (
 );
 
 $padProp: (
-    pad: 90px,
+    pad: 70px,
 );
 
 @mixin displayCont {
@@ -65,16 +65,18 @@ header {
 p {
     @include displayCont;
     padding: 10px 10px;
-    font-size: 18px !important;
+    font-size: 23px !important;
 }
 
 .formulario {
     @include displayCont;
-    min-height: 89vh;
+    min-height: 72vh;
     flex-direction: column;
+
     form {
         width: 392px;
     }
+
     p {
         min-width: 500px;
     }
@@ -119,8 +121,20 @@ p {
 
 h1 {
     @extend header;
+    padding-bottom: 16px;
     font-weight: bold;
     text-align: center;
+}
+
+h2 {
+    @extend h1;
+    padding-bottom: 8px !important;
+    padding-top: 11px;
+}
+
+h3 {
+    @extend h1;
+    font-size: 22px !important;
 }
 
 .row {
@@ -128,6 +142,35 @@ h1 {
     justify-content: center;
 }
 
+.colIzq {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.colDer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.maps {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
 
 footer {
     align-items: center;
