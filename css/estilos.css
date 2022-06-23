@@ -47,8 +47,9 @@ p {
   justify-content: center !important;
   align-items: center !important;
   text-align: center;
-  padding: 10px 10px;
-  font-size: 23px !important; }
+  padding: 10px 20px;
+  font-size: 24px !important;
+  margin: 10px 20px; }
 
 .formulario {
   display: flex;
@@ -118,10 +119,9 @@ h3 {
   padding-top: 56.25%; }
 
 .maps {
-  position: relative;
-  overflow: hidden;
   width: 100%;
-  padding-top: 56.25%; }
+  text-align: center;
+  padding: 28px 12px; }
 
 .responsive-iframe {
   position: absolute;
@@ -232,4 +232,13 @@ footer {
   .formulario form {
     width: 340px; }
   .formulario p {
-    min-width: 340px; } }
+    min-width: 340px; }
+  h1, h2, h3 {
+    padding-bottom: 12px; }
+  p {
+    padding: 10px 24px;
+    font-size: 18px !important; }
+  .textContainer {
+    padding-top: 40px; }
+  h3 {
+    padding: 0px 24px; } }
