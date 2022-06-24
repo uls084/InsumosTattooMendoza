@@ -10,7 +10,8 @@ $imgAncho: (
 );
 
 $padProp: (
-    pad: 50px,
+    padTop: 50px,
+    padBottom: 60px,
 );
 
 @mixin displayCont {
@@ -39,7 +40,7 @@ $tamanio in $imgAncho {
 
 
 .textContainer {
-    padding-top: map-get($padProp, pad);
+    padding-top: map-get($padProp, padTop);
     padding-bottom: 20px;
 }
 
@@ -53,8 +54,8 @@ $tamanio in $imgAncho {
 }
 
 main {
-    padding-top: 70px;
-    padding-bottom: map-get($padProp, pad);
+    padding-top: map-get($padProp, padTop);
+    padding-bottom: map-get($padProp, padBottom);
     min-height: 70vh;
     font-family: 'Nunito', sans-serif !important;
 }
@@ -163,7 +164,7 @@ h3 {
 .maps {
     width: 100%;
     text-align: center;
-    padding: 28px 12px;
+    padding: 8px 12px;
 }
 
 .responsive-iframe {
