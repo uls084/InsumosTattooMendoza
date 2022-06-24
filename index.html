@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Style/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="shortcut icon" href="./Images/Logopequeño.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,87 +16,126 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 
+    <meta name="description"
+        content="BloodnInk es un sitio especializado en insumos de tatuajes nacionales e internacionales con los mejores precios del mercado.">
+    <meta name="keywords" content="TATUAJE, INSUMOS, TATUADORES,">
     <title>BloodnInk</title>
 
 </head>
 
 <body>
     <header>
-        <nav class="navBar">
-            <a href="./index.html">
-                <h1 class="logo text-focus-in">BloodnInk</h1>
-            </a>
-            <ul class="menu">
-                <li><a href="index.html" class="actual">Inicio</a></li>
-                <li><a href="./Pages/productos.html">Productos</a></li>
-                <li><a href="./Pages/sucursales.html">Sucursales</a></li>
-                <li><a href="./Pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./Pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav
+            class="navbar fixed-top navbar-expand-lg navbar-fixed-top navbar-dark background-color:#1d1c1c navbar-toggleable-md">
+            <div class="container-fluid" style="background-color:#1d1c1c">
+                <a class="navbar-brand text-danger text-focus-in" href="./index.html">BloodnInk</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end navBar" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-danger actual btn btn-primary" aria-current="page"
+                                href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="./Pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="./Pages/sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="./Pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="./Pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <div class="imagenIndex">
-            <img src="./Images/portada.jpg" alt="Portada" id="portada"></img>
+        <div class="imagenIndex img-fluid">
+            <img src="./Images/portada.jpg" alt="Portada" class="container--grande"></img>
         </div>
+
         <section class="textContainer">
             <div>
-                <h2>Novedades</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adip
-                    Lorem ipsum dolor sit amet, consectetur adip
-                    Lorem ipsum dolor sit amet, consectetur adip
-                    Lorem ipsum dolor sit amet, consectetur adip
+                <h1 class="text-center">Bienvenidos</h1>
+                <p class="text-center">
+                    Bloodnink, una empresa pensada para ofrecer los mejores productos del mercado para artistas de éste
+                    mundo hermoso que conocemos cómo tatuaje.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-center">Últimas novedades</h2>
+                <p class="text-center">En esta sección van a encontrar las ultimas novedades del mundo de los insumos de
+                    tatuajes,
+                    tanto de productos nacionales cómo de productos internacionales a los mejores costos posible.
                 </p>
             </div>
         </section>
 
-        <section class="index_container">
-
-            <div class="cards">
-                <div class="card_container">
-                    <div class="card_img">
-                        <img src="./Images/tattoomachine.png" alt="Maquina de tatuar">
+        <div class="container">
+            <div class="row ">
+                <div class="col order-first d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./Images/tattoomachine.png" class="card-img-top" alt="Maquina de tatuar">
+                        <div class="card-body">
+                            <h2 class="card-title">Maquinas</h2>
+                            <p class="card-text">Las mejores maquinas rotativas, de bobina, neumáticas e inalambricas
+                                del mercado.</p>
+                            <a href="./Pages/productos.html" class="btn btn-danger">Ir a productos</a>
+                        </div>
                     </div>
-                    <h4>Maquinas</h4>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./Images/tintas.png" class="card-img-top" alt="Tinta para tatuar">
+                        <div class="card-body">
+                            <h2 class="card-title">Tintas</h2>
+                            <p class="card-text">Las mejores tintas del mercado las encontras acá, Eternal Ink, Solid Ink, Radiant Ink y
+                                Dynamic Ink.</p>
+                            <a href="./Pages/productos.html" class="btn btn-danger">Ir a productos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col order-last d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./Images/cartuchos.png" class="card-img-top" alt="Cartuchos para tatuar">
+                        <div class="card-body">
+                            <h2 class="card-title">Cartuchos</h2>
+                            <p class="card-text">Elegí entre una gran variedad de cartuchos y agujas flat o magnum. </p>
+                            <a href="./Pages/productos.html" class="btn btn-danger">Ir a productos</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="cards">
-                <div class="card_container">
-                    <div class="card_img">
-                        <img src="./Images/tintas.png" alt="Tinta para tatuar">
-                    </div>
-                    <h4>Tintas</h4>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="card_container">
-                    <div class="card_img">
-                        <img src="./Images/cartuchos.png" alt="Cartuchos para tatuar">
-                    </div>
-                    <h4>Cartuchos</h4>
-                </div>
-            </div>
-
-
-        </section>
-
-
+        </div>
     </main>
 
-    <footer>
-        <div class="footerLeft">
-            <h5>© Copyright 2022 - Todos los derechos reservados</h5>
+    <footer class="text-center d-flex justify-content-around">
+        <div class="text-dark p-3">
+            © Copyright 2022 - Todos los derechos reservados
         </div>
-
         <div class="footerRight">
-            <!--Iconos redes sociales-->
             <a><img src="./Images/facebook.png" alt="Logo de Facebook"> </a>
             <a><img src="./Images/whatsapp.png" alt="Logo de Whatsapp"> </a>
             <a><img src="./Images/instagram.png" alt="Logo de Instagram"> </a>
 
         </div>
+
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
