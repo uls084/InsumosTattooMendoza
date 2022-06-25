@@ -25,6 +25,12 @@
 .textContainer {
   padding-top: 50px;
   padding-bottom: 20px; }
+  .textContainer p {
+    padding-left: 9%;
+    padding-right: 9%; }
+
+.card {
+  width: 18rem; }
 
 .card-img {
   width: 100%;
@@ -44,13 +50,8 @@ header, h1, h2, h3 {
   font-family: 'Oswald', sans-serif !important; }
 
 p {
-  display: flex;
-  justify-content: center !important;
-  align-items: center !important;
-  text-align: center;
-  padding: 8px 20px;
-  font-size: 22px !important;
-  margin: 10px 20px; }
+  padding: 5px 14px;
+  font-size: 22px !important; }
 
 .formulario {
   display: flex;
@@ -68,6 +69,7 @@ p {
   display: flex;
   justify-content: center !important;
   align-items: center !important;
+  text-align: center;
   text-align: center;
   margin: 10px 0; }
   .formularioField input[type=text],
@@ -93,19 +95,20 @@ p {
     text-transform: uppercase;
     padding: 0 23px; }
 
-element.style {
-  width: 15rem; }
+a.nav-link.text-danger {
+  text-align: center; }
 
 h1, h2, h3 {
   font-size: 32px;
   padding-bottom: 4px;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  margin-top: 5%; }
 
 h2 {
   padding-bottom: 8px !important;
-  padding-top: 11px;
-  font-size: 24px; }
+  font-size: 24px;
+  margin-top: 2%; }
 
 h3 {
   font-size: 22px !important; }
@@ -120,7 +123,6 @@ h3 {
 
 .colDer {
   position: relative;
-  /*overflow: hidden;*/
   width: 100%;
   padding-top: 56.25%; }
 
@@ -161,6 +163,12 @@ footer {
 
 .navbar-brand {
   font-size: 24px; }
+
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  margin: 8px 0px; }
 
 nav {
   height: 70px;
@@ -244,18 +252,23 @@ footer {
   p {
     padding: 8px 60px;
     font-size: 18px !important; }
+  .col {
+    padding: 20px 10px; }
   .textContainer {
     padding-top: 30px; }
     .textContainer div p {
-      padding: 10px 24px;
-      font-size: 18px !important; }
+      padding: 10px 24px !important;
+      font-size: 18px !important;
+      margin: 0px 5%; }
   div .card-body p {
-    padding: 10px 18px;
+    padding: 2px 2px;
     font-size: 18px !important; }
   h3 {
     padding: 0px 24px; }
   iframe {
-    height: 500px; } }
+    height: 500px;
+    padding: 0px 5%;
+    margin: 10% 0px; } }
 
 @media screen and (max-width: 576px) {
   footer div {
@@ -269,11 +282,19 @@ footer {
   h1, h2, h3 {
     padding-bottom: 10px; }
   div .card-body p {
-    padding: 10px 18px;
+    padding: 2px 2px;
     font-size: 18px !important; }
   .textContainer {
     padding-top: 40px; }
+    .textContainer p {
+      padding: 10px 24px !important;
+      font-size: 18px !important;
+      margin: 0px 5%; }
+  .col {
+    padding: 24px 10px; }
   h3 {
     padding: 0px 24px; }
   iframe {
-    height: 450px; } }
+    height: 450px;
+    padding: 0px 5%;
+    margin: 10% 0px; } }

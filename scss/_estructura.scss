@@ -42,6 +42,15 @@ $tamanio in $imgAncho {
 .textContainer {
     padding-top: map-get($padProp, padTop);
     padding-bottom: 20px;
+
+    p {
+        padding-left: 9%;
+        padding-right: 9%;
+    }
+}
+
+.card {
+    width: 18rem;
 }
 
 .card-img {
@@ -65,10 +74,8 @@ header {
 }
 
 p {
-    @include displayCont;
-    padding: 8px 20px;
+    padding: 5px 14px;
     font-size: 22px !important;
-    margin: 10px 20px;
 }
 
 
@@ -87,9 +94,7 @@ p {
 }
 
 .formularioField {
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
+    @include displayCont;
     text-align: center;
     margin: 10px 0;
 
@@ -120,8 +125,8 @@ p {
     }
 }
 
-element.style {
-    width: 15rem;
+a.nav-link.text-danger {
+    text-align: center;
 }
 
 h1 {
@@ -130,13 +135,15 @@ h1 {
     padding-bottom: 4px;
     font-weight: bold;
     text-align: center;
+    margin-top: 5%;
 }
 
 h2 {
     @extend h1;
     padding-bottom: 8px !important;
-    padding-top: 11px;
     font-size: 24px;
+    margin-top: 2%;
+
 }
 
 h3 {
@@ -156,7 +163,6 @@ h3 {
 
 .colDer {
     position: relative;
-    /*overflow: hidden;*/
     width: 100%;
     padding-top: 56.25%;
 }
@@ -207,4 +213,11 @@ footer {
 
 .navbar-brand {
     font-size: 24px;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    margin: 8px 0px;
 }
